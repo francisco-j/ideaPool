@@ -1,0 +1,23 @@
+.Card {
+    border-radius: 16px;
+    border: 1px solid rgb(213, 213, 213);
+    padding: 16px 32px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+
+    &__title {
+        font-size: 20px;
+        grid-column: 1 / span 2;
+        justify-self: center;
+    }
+
+    &__img {
+        max-width: 100px;
+        max-height: 150px;
+    }
+    &__textKey {
+        display: inline;
+        color: rgb(69, 69, 69);
+    }
+}

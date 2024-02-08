@@ -1,0 +1,19 @@
+.Footer {
+    background-color: #25211e;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 4px 0;
+    width: 100%;
+    
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+    }
+    &__year {
+        color: rgb(182, 182, 158);
+        font-size: 12px;
+    }
+}
