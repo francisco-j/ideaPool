@@ -19,33 +19,27 @@ const pools = [
     },
 ];
 
-const getAllPools = (req, res) => {
-    res.send({
-        data: pools,
-        meta: {},
-    });
-};
+export default {
+    getAllPools: (req, res) => {
+        res.send({
+            data: pools,
+            meta: {},
+        });
+    },
 
-const getPoolById = (req, res) => {
-    res.send("Get an existing workout");
-};
+    getPoolById: (req, res) => {
+        res.send("Get an existing workout");
+    },
 
-const createNewPool = (req, res) => {
-    res.send("Create a new workout");
-};
+    createNewPool: (req, res) => {
+        res.send("Create a new workout");
+    },
 
-const updateOnePool = (req, res) => {
-    res.send("Update an existing workout");
-};
+    updateOnePool: (req, res) => {
+        res.send("Update an existing workout");
+    },
 
-const deleteOnePool = (req, res) => {
-    res.send("Delete an existing workout");
-};
-
-module.exports = {
-    getAllPools,
-    getPoolById,
-    createNewPool,
-    updateOnePool,
-    deleteOnePool,
-};
+    deleteOnePool: (req, res) => {
+        res.send("Delete an existing workout");
+    },
+}

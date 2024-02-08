@@ -1,6 +1,6 @@
-const {Router} = require("express");
-const poolsRouter = require("./poolsRouter");
-const bodyParser = require("body-parser");
+import {Router} from 'express';
+import poolsRouter from './poolsRouter.js';
+import bodyParser from 'body-parser';
 
 const router = Router();
 
@@ -10,4 +10,4 @@ router.use("/pools", poolsRouter);
 // router.use("/ideas", ideasRouter);
 // router.use("/votes", votesRouter);
 
-module.exports = router;
+export default router;

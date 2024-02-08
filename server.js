@@ -1,7 +1,7 @@
-const express = require('express')
-var cors = require('cors');
-const v1Router = require("./srcV1/routes");
-const path = require("path");
+import express from "express";
+import cors from "cors";
+import v1Router from "./srcV1/routes/index.js";
+import path from "path";
 
 const app = express()
 
