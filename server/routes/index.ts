@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import poolsRouter from './poolsRouter.js';
+import poolsRouter from './poolsRouter';
 import bodyParser from 'body-parser';
 
 const router = Router();

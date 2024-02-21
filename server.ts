@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import v1Router from "./srcV1/routes/index.js";
+import apiRouter from "./server/routes/index";
 import path from "path";
 
 const app = express()
@@ -9,7 +9,7 @@ app.use(cors({
     origin: 'http://localhost:5173',
 }));
 
-app.use("/api/v1", v1Router);
+app.use("/api/v1", apiRouter);
 
 app.use(express.static("public"));
 

@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import poolsController from '../controllers/poolsController.js';
+import poolsController from '../controllers/poolsController';
 const router = Router();
 
 router.get("/", poolsController.getAllPools);

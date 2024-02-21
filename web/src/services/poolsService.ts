@@ -5,7 +5,7 @@ interface iPoolService {
 }
 
 const service: iPoolService = {
-    async getAll()  {
+    getAll: async () => {
         try {
             return await myFetch('/pools');
         } catch (err) {
